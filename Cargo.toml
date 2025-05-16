@@ -1,0 +1,19 @@
+[package]
+name = "synthlauncher"
+version = "0.1.0"
+edition = "2021"
+
+[workspace]
+members = ["crates/sl-frontend/src-tauri"]
+
+[dependencies]
+tokio = "1.44.1"
+clap = { version = "4.5.34", features = ["derive"] } 
+sl-omniarchive = { path = "crates/sl-omniarchive" }
+sl-meta = { path = "crates/sl-meta" }
+sl-utils = { path = "crates/sl-utils" }
+sl-java-manager = { path = "crates/sl-java-manager" }
+sl-core ={ path = "crates/sl-core"}
+sl-mod-manager = { path = "crates/sl-mod-manager" }
+discord-rpc-client = "^0.4"
+chrono = "*"
